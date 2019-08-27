@@ -2,13 +2,13 @@ version: '3.5'
 
 services:
   maintenance:
+    image: wickerlabs/maintenance
+    container_name: maintenance-page
     environment:
-      TEAM_NAME: 'Wickerlabs, Inc.'
-      TITLE: 'Oops, Wickerlabs'
-      MAIL_ADDRESS: info@wickerlabs.com
+      TEAM_NAME: "Team name"
+      TITLE: "Oops!"
+      MAIL_ADDRESS: "mail@domain.com"
       LINK_COLOR: "#dc8100"
       PORT: 8080
-    container_name: maintenance-page
     ports:
-      - 8085:8080
-    image: maintenance-simple
+    - 80:8080

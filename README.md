@@ -53,6 +53,7 @@ services:
       MAIL_ADDRESS: "mail@domain.com"
       LINK_COLOR: "#dc8100"
       PORT: 8080
+      RESPONSE_CODE: "503 Service Unavailable"
     ports:
       - 80:8080
 ```

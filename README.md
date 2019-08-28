@@ -27,6 +27,7 @@ This image came as a result for the need to place a simple maintenance page in t
 |`TITLE`|Modifies the site *title* displayed. Defaults to `Site Maintenance`|
 |`LINK_COLOR`|Modifies the link color for the *contact us* link. Defaults to `#dc8100` |
 |`PORT`| Specifies the port to serve the maintenance page. Defaults to `8080` |
+|`RESPONSE_CODE`| Specifies the HTTP response code to serve with the maintenance page. Defaults to `503 Service Unavailable` |
 
 ## Docker
 You can easily run or create a docker container for  this [image](https://hub.docker.com/r/wickerlabs/maintenance) by using the command: 

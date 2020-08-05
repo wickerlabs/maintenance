@@ -28,6 +28,8 @@ This image came as a result for the need to place a simple maintenance page in t
 |`LINK_COLOR`|Modifies the link color for the *contact us* link. Defaults to `#dc8100` |
 |`PORT`| Specifies the port to serve the maintenance page. Defaults to `8080` |
 |`RESPONSE_CODE`| Specifies the HTTP response code to serve with the maintenance page. Defaults to `503 Service Unavailable` |
+|`HEADLINE`| H1 headline Defaults to `We\&rsquo;ll be back soon!` |
+|`MESSAGE`| Page message Defaults to `Sorry for the inconvenience but we\&rsquo;re performing some maintenance at the moment. If you need to you can always <a href=\"mailto:{{mail}}\">contact us<\/a>, otherwise we\&rsquo;ll be back online shortly!` |
 
 ## Docker
 You can easily run or create a docker container for  this [image](https://hub.docker.com/r/wickerlabs/maintenance) by using the command: 

@@ -1,3 +1,19 @@
+
+## Build Docker Image And Push it to ECR
+build:
+
+`docker build -t maintenanceimage . --platform linux/amd64`
+
+tag it for ecr repo:
+
+`docker tag maintenanceimage:latest 020218684197.dkr.ecr.us-west-2.amazonaws.com/maintenanceimage:latest`
+
+push it to ecr:
+
+`docker push 020218684197.dkr.ecr.us-west-2.amazonaws.com/maintenanceimage:latest`
+
+THE NOTES BELOW ARE FROM THE ORIGINAL REPO
+
 # Maintenance
 
 A simple maintenance page in a simple docker image.

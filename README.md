@@ -31,6 +31,7 @@ This image came as a result for the need to place a simple maintenance page in t
 |`MAIL_ADDRESS`| This modifies the email address provided for the *contact us* link in the page. Defaults to `mail@example.com`|
 |`TEAM_NAME`| Modifies the *team* or *company name* displayed on the page. Defaults to `The Team`|
 |`LINK_COLOR`|Modifies the link color for the *contact us* link. Defaults to `#dc8100` |
+|`THEME`|Modifies page theme current options `Light` or `Dark`. Defaults to `Light`
 |`RESPONSE_CODE`| Specifies the HTTP response code to serve with the maintenance page. Defaults to `503 Service Unavailable` |
 |`PORT`| Specifies the port to serve the maintenance page. Defaults to `8080` |
 
@@ -57,6 +58,7 @@ services:
       TITLE: "Oops!"
       MAIL_ADDRESS: "mail@domain.com"
       LINK_COLOR: "#dc8100"
+      THEME: "Light"
       PORT: 8080
       RESPONSE_CODE: "503 Service Unavailable"
       MESSAGE: "This is my custom message. {{contact}} now"

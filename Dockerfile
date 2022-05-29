@@ -8,6 +8,7 @@ ENV PORT=8080
 ENV TEAM_NAME="The Team"
 ENV TITLE="Site Maintenance"
 ENV LINK_COLOR="#dc8100"
+ENV THEME="Light"
 ENV RESPONSE_CODE="503 Service Unavailable"
 ENV CONTACT_LINK="contact us"
 ENTRYPOINT [ "./entrypoint.sh" ]

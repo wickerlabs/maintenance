@@ -26,11 +26,12 @@ This image came as a result for the need to place a simple maintenance page in t
 |--|--|
 |`TITLE`|Modifies the site *title* displayed. Defaults to `Site Maintenance`|
 |`HEADLINE`| H1 headline Defaults to `We'll be back soon!` |
-|`MESSAGE`| Page message Defaults to `Sorry for the inconvenience but we're performing some maintenance at the moment. If you need to you can always {{contact}}, otherwise we'll be back online shortly!` |
-|`CONTACT_LINK`| Include `{{contact}}` in your custom message to set the word you want to use instead of the default `contact us`. |
+|`MESSAGE`| Page message Defaults to `Sorry for the inconvenience but we're performing some maintenance at the moment. If you need to you can always {{contact}}, otherwise we'll be back online shortly!`.<br><br>**Note**: include `{{contact}}` in your custom message as placeholder for the contact link. |
+|`CONTACT_LINK`| Set the word you want to use instead of the default `contact us`. |
 |`MAIL_ADDRESS`| This modifies the email address provided for the *contact us* link in the page. Defaults to `mail@example.com`|
 |`TEAM_NAME`| Modifies the *team* or *company name* displayed on the page. Defaults to `The Team`|
 |`LINK_COLOR`|Modifies the link color for the *contact us* link. Defaults to `#dc8100` |
+|`THEME`|Modifies page theme current options `Light` | `Dark`. Defaults to `Light`
 |`RESPONSE_CODE`| Specifies the HTTP response code to serve with the maintenance page. Defaults to `503 Service Unavailable` |
 |`PORT`| Specifies the port to serve the maintenance page. Defaults to `8080` |
 
@@ -57,6 +58,7 @@ services:
       TITLE: "Oops!"
       MAIL_ADDRESS: "mail@domain.com"
       LINK_COLOR: "#dc8100"
+      THEME: "Light"
       PORT: 8080
       RESPONSE_CODE: "503 Service Unavailable"
       MESSAGE: "This is my custom message. {{contact}} now"

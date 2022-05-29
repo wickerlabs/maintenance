@@ -9,9 +9,10 @@ services:
       TITLE: "Oops!"
       MAIL_ADDRESS: "mail@domain.com"
       LINK_COLOR: "#dc8100"
+      THEME: "Light"
       PORT: 8080
       RESPONSE_CODE: "503 Service Unavailable"
       MESSAGE: "Sorry for the inconvenience but we're performing some maintenance at the moment. If you need to you can always {{contact}}, otherwise we'll be back online shortly!"
       CONTACT_LINK: "contact us"
     ports:
-      - 80:8080
+      - 8080:8080

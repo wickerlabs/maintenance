@@ -2,7 +2,7 @@ version: '3.5'
 
 services:
   maintenance:
-    image: wickerlabs/maintenance
+    image: maintenanceimage
     container_name: maintenance-page
     environment:
       TEAM_NAME: "Team name"

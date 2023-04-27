@@ -2,7 +2,6 @@
 
 A simple maintenance page in a simple docker image.
 
-![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/wickerlabs/maintenance?style=for-the-badge) 
 ![MicroBadger Downloads](https://img.shields.io/docker/pulls/wickerlabs/maintenance?style=for-the-badge)
 ![MicroBadger Size](https://img.shields.io/docker/image-size/wickerlabs/maintenance?style=for-the-badge) 
 

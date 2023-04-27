@@ -33,6 +33,7 @@ This image came as a result for the need to place a simple maintenance page in t
 |`THEME`|Modifies page theme current options `Light` or `Dark`. Defaults to `Light`
 |`RESPONSE_CODE`| Specifies the HTTP response code to serve with the maintenance page. Defaults to `503 Service Unavailable` |
 |`PORT`| Specifies the port to serve the maintenance page. Defaults to `8080` |
+|`HTML`| Specifies custom maintenance page HTML template. Defaults [index.html](html/index.html) |
 
 ## Docker
 You can easily run or create a docker container for  this [image](https://hub.docker.com/r/wickerlabs/maintenance) by using the command: 

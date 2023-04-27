@@ -1,10 +1,12 @@
 #! /bin/sh
-sed -i "s/{{message}}/$(echo ${MESSAGE})/g" index.html
-sed -i "s/{{contact}}/$(echo ${CONTACT_LINK})/g" index.html
-sed -i "s/{{mail}}/$(echo ${MAIL_ADDRESS})/g" index.html
-sed -i "s/{{headline}}/$(echo ${HEADLINE})/g" index.html
-sed -i "s/{{team_name}}/$(echo ${TEAM_NAME})/g" index.html
-sed -i "s/{{title}}/$(echo ${TITLE})/g" index.html
-sed -i "s/{{theme}}/$(echo ${THEME})/g" index.html
 
-while true;  do {  echo -e "HTTP/1.1 ${RESPONSE_CODE}\r\n"; echo "$(cat index.html)"; } | nc -lvp  "$PORT";  done
+RESPONSE=`echo "HTTP/1.1 ${RESPONSE_CODE}\n\n ${HTML:=\`cat index.html\`}" | \
+sed "s/{{message}}/$(echo ${MESSAGE})/g" | \
+sed "s/{{contact}}/$(echo ${CONTACT_LINK})/g" | \
+sed "s/{{mail}}/$(echo ${MAIL_ADDRESS})/g" | \
+sed "s/{{headline}}/$(echo ${HEADLINE})/g" | \
+sed "s/{{team_name}}/$(echo ${TEAM_NAME})/g" | \
+sed "s/{{title}}/$(echo ${TITLE})/g" | \
+sed "s/{{theme}}/$(echo ${THEME})/g"`
+
+while true;  do printf "$RESPONSE" | nc -lzp "$PORT";  done
